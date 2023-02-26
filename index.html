@@ -1,123 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<meta charset="utf-8">
 <head>
-	<title>Tony's Arts - homepage</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
-	<style type="text/css">
-	
-<style>
-
-body{
-	margin: 0 auto;
-	background-image: url("img/bethArtshow.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-
-footer p {
-  padding-left: 80%;
-  margin-left: 50px;
-  height: 50%;
-  color: #4267B2;
-}
-
-.content h2 a {
-color: white;
-text-decoration: none;
-}
-.content h2 a {
-color: white;
-text-decoration: none;
-}
-center h1 {
-font-size: 72px;
-}
-body img {
-height: 500px;
-display: block;
-margin-right: auto;
-padding-left: 10%;
-position: sticky;
-}
-
-.sidePane {
-  padding-left: 82%;
-  color: white;
-  height: 20px;
-}
-
-</style>
+	<title>Welcome to Smash Dojo</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+	<body>
+		<h1>Welcome to Super Smash Dojo</h1>
+		<div id="signup">
+			<a href="signup.php"><img src="images/signup.png"></a>
+		</div>
+		<div id="signin">
+			<a href="login.php"><img src="images/signin.png"></a>
+		</div>
+		<div id="aboutus">
+			<a href="aboutus.html"><img src="images/aboutus.png"></a>
+		</div>
 
-<body>
+		<video autoplay muted loop class="myvideo">
+			<source src="videos/fd.mp4">
+			<source src="background.ogg">
+			<p>This is not accesible</p>
+		</video>
+		<?php
+			if (isset()) {
 
-
-<header>
-<nav>
-	<ul style="color:rgb(252, 252, 252);">
-		<li><a href="index.html" style="color:rgb(252, 252, 252);">Home</a></li>
-				<ul style="color:rgb(252, 252, 252);">
-					<li><a href="gallery.html" style="color:rgb(252, 252, 252);">Gallery</a></li>
-				</ul>
-		<li><a href="tony.html" style="color:rgb(252, 252, 252);">Location</a></li>
-		<li><a href="signup/SignUpHtmlPage.php"style="color:rgb(252, 252, 252);">sign up</a></li>
-	</ul> 
-</nav>
-</header>
-<div class="sidePane">
-                        <p>This page is focused on gallery artist! you can become an artist or buy from an artists with good art prices. You can also share your feed back or come visit our store in person. We are also booking for art shows so you can come visit our shows as well. We look forward to you as a customer, We have a facebook page of artists and other pages you can visit but our facebook page for the website is available if you want to navigate to our page please click our facebook link</p>
-</div>
-
-
- <div class="slideshow-container">
-
-                
-                        <div class="mySlides fade">
-                          <div class="numbertext"style="color: white; text-align: center;">1 / 3</div>
-                          <img src="img/bethArtshow.jpg" style="width:70%; height: 70%; align-left: 50px;" alt="iamge1">
-                          <div class="text">Art show is October 22nd, 2022.</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                          <div class="numbertext" style="color: white; text-align: center;">2 / 3</div>
-                          <img src="img/aq.jpg" style="width:70%; height: 70%" alt="image2">
-                          <div class="text">Please support Aquarius Oddities!</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                          <div class="numbertext" style="color: white; text-align: center;" >3 / 3</div>
-                          <img src="img/lessons.jpg" style="width:70%; height: 70%" alt="image3">
-                          <div class="text">Painting Lessons are being developed into maturity!.</div>
-                        </div>
-
-
-	
-<footer>
-	<p>#paintings by Tony</p>
-	
- <a href="https://www.facebook.com/paintingsbyantonio"><img src="img/followushere.jpg" style="width:50px;height:50px; padding-left: 90%;"></a>
-	<p>Phone(270)-990-1294</p>
-  
-</footer>
-	<script>
-  let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 10000); // Change image every 2 seconds
-} 
-</script>
-	
-</body>
-
+			}
+		?>
+	</body>
 </html>
